@@ -1,0 +1,35 @@
+body{
+    background-color:#AE95BB;
+}
+
+.btn-primary {
+    color: #FFD93D;
+    background-color: #4A1266;
+    border-color: #4A1266;
+}
+
+.btn-primary:hover {
+    color: #FFD93D;
+    background-color: #4A1266;
+    border-color: #4A1266;
+}
+
+.btn-primary:focus {
+    color: #4A1266;
+    background-color: #FFD93D;
+    border-color: #4A1266;
+}
+
+.btn-primary:active {
+    color: #4A1266;
+    background-color: #FFD93D;
+    border-color: #4A1266;
+}
+
+
+.input-limit{
+    font-size:80%;
+    color:black;
+    display:block;
+    text-align: right;
+}

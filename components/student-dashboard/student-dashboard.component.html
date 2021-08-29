@@ -1,0 +1,96 @@
+<h1 class="welcome">Welcome, <span id="welcome-user"></span></h1>
+<div>
+
+<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="v-pills-enroll-tab" data-bs-toggle="pill" data-bs-target="#v-pills-enroll" type="button" role="tab" aria-controls="v-pills-enroll" aria-selected="false">Enroll</button>
+      <button class="nav-link" id="v-pills-viewo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-viewo" type="button" role="tab" aria-controls="v-pills-viewo" aria-selected="false">View Open Courses</button>
+      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Withdraw</button>
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <h3>My Schedule</h3>
+        <br/>
+        <table class="table" id="schedule-table">
+          <thead>
+          <th>Course Abv</th>
+          <th>Course Name</th>
+          <th>Professor</th>
+          </thead>
+          <tbody id="schedule-table-body">
+
+          </tbody>
+      </table>
+
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-enroll" role="tabpanel" aria-labelledby="v-pills-enroll-tab">
+        <div class="form-enroll-course">
+          <h3 class="h3 mb-3 fw-normal">Type in the Course Abbreviation of the course you would like to enroll in.</h1>
+  
+          <div id="abv-container" class="form-floating">
+              <input type="abv" class="form-control" id="enroll-form-abv" placeholder="Course Abbreviation">
+              <label for="enroll-form-abv">Course Abbreviation</label>
+          </div>
+        
+          <br/>
+          <button id="enroll-course-form-button" class="w-50 btn btn-lg btn-primary" type="submit">Enroll in Course!</button>
+          
+          <div id="enroll-error-msg-container">
+            <br/>
+            <p hidden id="enroll-error-msg" class="alert alert-danger"></p>
+          </div>
+          <br/>
+          <div id="enroll-success-msg-container">
+            <p hidden id="enroll-success-msg" class="alert alert-success"></p>
+          </div>
+  
+      </div>
+  
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-viewo" role="tabpanel" aria-labelledby="v-pills-viewo-tab">
+        <table class="table" id="courseopen-table">
+          <thead>
+          <th>Course Abv</th>
+          <th>Course Name</th>
+          <th>Professor</th>
+          <th>Details</th>
+          <th>Slots</th>
+          </thead>
+          <tbody id="courseopen-table-body">
+
+          </tbody>
+      </table>
+
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        <div class="form-withdraw-course">
+          <h3 class="h3 mb-3 fw-normal">Which course would you like to withdraw from?</h1>
+  
+          <div id="abv-container" class="form-floating">
+              <input type="abv" class="form-control" id="withdraw-form-abv" placeholder="Course Abbreviation">
+              <label for="withdraw-form-abv">Course Abbreviation</label>
+          </div>
+        
+          <br/>
+          <button id="withdraw-course-form-button" class="w-50 btn btn-lg btn-primary" type="submit">Withdraw from Course!</button>
+          <br/>
+          <div id="withdraw-error-msg-container">
+            <br/>
+            <p hidden id="withdraw-error-msg" class="alert alert-danger"></p>
+          </div>
+          
+          <br/>
+          <div id="withdraw-success-msg-container">
+            <p hidden id="withdraw-success-msg" class="alert alert-success"></p>
+          </div>
+      
+  
+      </div>
+      </div>
+
+    </div>
+  </div>
